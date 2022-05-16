@@ -7,10 +7,10 @@ function App() {
       <header className="App-header">
         <img src={ferrari} className="App-logo" alt="logo" />
         <h3>
-          Cars Ramirez in progress
+          Ecomerce Store Ramirez in progress
         </h3>
         <p>
-          Ecomerce about cars sales
+          Ecomerce sales
         </p>
       </header>
     </div>
