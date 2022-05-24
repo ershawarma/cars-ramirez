@@ -1,20 +1,10 @@
-import ferrari from './ferrari.jpg';
+import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={ferrari} className="App-logo" alt="logo" />
-        <h3>
-          Ecomerce Store Ramirez in progress
-        </h3>
-        <p>
-          Ecomerce sales
-        </p>
-      </header>
-    </div>
-  );
+    <h1 className="text-3xl font-bold underline bg-black">
+      Hello world!
+    </h1>
+  )
 }
-
-export default App;
