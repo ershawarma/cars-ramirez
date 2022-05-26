@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+
+import NavBar from './components/NavBar';
+import ItemListContainer from './container/ItemListContainer';
 import './App.css';
 
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline bg-black">
-      Hello world!
-    </h1>
-  )
+    <div className="App">
+     <NavBar/>
+     <ItemListContainer/>
+    </div>
+  );
 }
+
+export default App;

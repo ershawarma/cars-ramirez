@@ -1,0 +1,23 @@
+ul {
+    background-color: rgb(38, 118, 144);
+    color: white;
+    display: flex;
+    list-style: none; 
+    font-size:1.25em;
+    margin: 0;
+}
+
+
+li {
+    padding: 20px;    
+}
+
+.push {
+    margin-left: auto;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+
+}
