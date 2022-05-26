@@ -13,7 +13,7 @@ function NavBar() {
                   alt={'logo'}
                 />
             </li>
-            <li>Aluv</li>
+            <li>Amirez Store</li>
 
             {/* categorias clickeables */}
             <li>Men</li>
