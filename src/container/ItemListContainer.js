@@ -9,7 +9,7 @@ function ItemListContainer (props) {
             }}>
         Gracias por visitarnos!!!
         </h1>
-    )
+    );
 }
 
 export default ItemListContainer;

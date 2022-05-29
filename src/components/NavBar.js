@@ -5,7 +5,7 @@ import logo from './R.jpg'
 
 function NavBar() {
     return (
-      <div className='nav'>
+      <nav>
         <ul>
             {/* logo y brand name */}
             <li> <img 
@@ -25,7 +25,7 @@ function NavBar() {
             {/* carro de compras */}
             <li className='push'> <CartWidget/> </li>
         </ul>
-      </div> 
+      </nav> 
     );
   }
   
