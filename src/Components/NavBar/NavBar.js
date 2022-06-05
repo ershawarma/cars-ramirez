@@ -1,5 +1,5 @@
 import React from 'react';
-import CartWidget from './CartWidget.js'
+import CartWidget from './CartWidget.js.js'
 import './NavBar.css'
 import logo from './R.jpg'
 

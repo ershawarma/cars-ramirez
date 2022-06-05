@@ -8,6 +8,8 @@ function ItemListContainer (props) {
             marginTop:'100px'
             }}>
         Gracias por visitarnos!!!
+
+        {/* poner aqui un itemlist */}
         </h1>
     );
 }
