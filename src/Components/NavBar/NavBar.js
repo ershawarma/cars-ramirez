@@ -1,14 +1,13 @@
-import React from 'react';
-import CartWidget from './CartWidget.js.js'
+import CartWidget from '../CartWidget/CartWidget.js'
+import logo from '../../Img/R.jpg'
 import './NavBar.css'
-import logo from './R.jpg'
 
 function NavBar() {
     return (
       <nav>
-        <ul>
+        <ul className='navBar-ul'>
             {/* logo y brand name */}
-            <li> <img 
+            <li> <img className='navBar-img'
                   src={logo} 
                   alt={'logo'}
                 />
@@ -23,7 +22,7 @@ function NavBar() {
             <li>Contact us</li>
 
             {/* carro de compras */}
-            <li className='push'> <CartWidget/> </li>
+            <li className='navBar-push'> <CartWidget/> </li>
         </ul>
       </nav> 
     );

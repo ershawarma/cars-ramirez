@@ -1,4 +1,4 @@
-ul {
+.navBar-ul {
     background-color: rgb(38, 118, 144);
     color: white;
     display: flex;
@@ -7,16 +7,11 @@ ul {
     margin: 0;
 }
 
+.navBar-ul li { padding: 20px;  }
 
-li {
-    padding: 20px;    
-}
+.navBar-push { margin-left: auto; }
 
-.push {
-    margin-left: auto;
-}
-
-img {
+.navBar-img {
     width: 50px;
     height: 50px;
 

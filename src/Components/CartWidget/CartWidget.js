@@ -1,5 +1,4 @@
-import React from 'react';
-import shopCar from '/CartWidget.png'
+import shopCar from '../../Img/CartWidget.svg'
 
 function CartWidget() {
     return (

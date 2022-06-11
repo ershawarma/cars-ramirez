@@ -1,17 +1,23 @@
-import React from "react";
+import ItemList from '../ItemList/ItemList';
+import { getProducts } from '../Asyncmock/Asyncmock';
+import { useState, useEffect } from 'react';
+import './ItemListContainer.css';
 
 function ItemListContainer (props) {
-    return(
-        <h1 style={
-            {color:'red', 
-            textAlign: 'center',
-            marginTop:'100px'
-            }}>
-        Gracias por visitarnos!!!
+    const [products, setProducts] = useState([]);
 
-        {/* poner aqui un itemlist */}
-        </h1>
-    );
+    useEffect(() => {
+        getProducts().then(response => {
+            setProducts(response);
+        })
+    },[])
+
+    return(
+        <div className='ItemListContainer-Div'>
+            <h1>{props.greeting}</h1>
+            <ItemList products={products} />
+        </div>
+    )
 }
 
-export default ItemListContainer;
+export default ItemListContainer
