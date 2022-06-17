@@ -1,11 +1,10 @@
+import './Item.css'
 const Item = ({img, name}) => {
     return(
-        <li>
+        <li className="ItemDiv">
             <img src={img} alt={name}/>
             {name}
-            <button>See more</button>
         </li>
     )
 }
-
 export default Item

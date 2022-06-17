@@ -38,16 +38,16 @@ return (
             {/* Categories */}
         <ul className='nav-menu'>
             <li className='nav-item'>
-                <a href='#' className='nav-link'>Men</a>
+                <a href='#' className='nav-link'>Mangas</a>
             </li>
             <li className='nav-item'>
-                <a href='#' className='nav-link'>Women</a>
+                <a href='#' className='nav-link'>Animes</a>
             </li>
             <li className='nav-item'>
-                <a href='#' className='nav-link'>Kids</a>
+                <a href='#' className='nav-link'>Figures</a>
             </li>
             <li className='nav-item'>
-                <a href='#' className='nav-link'>Pets</a>
+                <a href='#' className='nav-link'>Comics</a>
             </li>
             <li className='nav-item'>
                 <a href='#' className='nav-link'>Contact us</a>
@@ -65,7 +65,7 @@ return (
             <span className='bar'></span>
         </div>
     </nav>
-    <button onClick={toggle}>{state ? 'close' : 'open'}</button>
+    {/* <button onClick={toggle}>{state ? 'close' : 'open'}</button> */}
     </div>
 
     );

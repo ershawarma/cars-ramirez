@@ -13,8 +13,7 @@ function ItemListContainer (props) {
     },[])
 
     return(
-        <div className='ItemListContainer-Div'>
-            <h1>{props.greeting}</h1>
+        <div className='ItemListContainerDiv'>
             <ItemList products={products} />
         </div>
     )

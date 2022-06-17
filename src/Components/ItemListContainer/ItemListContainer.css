@@ -1,3 +1,5 @@
-.ItemListContainer-Div {
-    position: center;
+.ItemListContainerDiv{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* height: 10px; */
 }
