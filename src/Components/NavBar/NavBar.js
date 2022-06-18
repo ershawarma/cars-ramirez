@@ -2,13 +2,13 @@ import CartWidget from '../CartWidget/CartWidget.js'
 import logo from '../../Img/R.jpg'
 import './NavBar.css'
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 function NavBar() {
-    const [state, setState] = useState(false);
-    const toggle = () => {
-        setState(!state);
-    } 
-    console.log(state);
+    // const [state, setState] = useState(false);
+    // const toggle = () => {
+    //     setState(!state);
+    // } 
+    // console.log(state);
 
 // const hamburger = document.querySelector(".hamburger");
 // const navMenu = document.querySelector(".nav-menu");
@@ -28,36 +28,20 @@ return (
     <nav className='navbar'>
        
              {/* Logo */}
-        <a href='#' className='nav-branding'>
+        <Link to='/' className='nav-branding'>
         <img className='nav-logo'
                   src={logo} 
                   alt={'logo'}
         />
-        </a>
+        </Link>
 
-            {/* Categories */}
-        <ul className='nav-menu'>
-            <li className='nav-item'>
-                <a href='#' className='nav-link'>Mangas</a>
-            </li>
-            <li className='nav-item'>
-                <a href='#' className='nav-link'>Animes</a>
-            </li>
-            <li className='nav-item'>
-                <a href='#' className='nav-link'>Figures</a>
-            </li>
-            <li className='nav-item'>
-                <a href='#' className='nav-link'>Comics</a>
-            </li>
-            <li className='nav-item'>
-                <a href='#' className='nav-link'>Contact us</a>
-            </li>
-
-            {/* Shopping car */}
-            <li className='nav-item'>
-                <a href='#' className='nav-link'><CartWidget/></a>
-            </li>
-        </ul>
+        <div className='nav-menu'>
+            <Link to='/category/Mangas' className='nav-item'>Mangas</Link>
+            <Link to='/category/Animes' className='nav-item'>Animes</Link>
+            <Link to='/category/Figures' className='nav-item'>Figures</Link>
+            <Link to='/category/Comics' className='nav-item'>Comics</Link>
+            <span className='nav-item'><CartWidget/></span>
+        </div>
 
         <div className='hamburger'>
             <span className='bar'></span>

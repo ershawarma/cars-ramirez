@@ -1,8 +1,24 @@
+
 .ItemListBox{
-    padding: 30vh;
-    height: 10px;
+    /* padding: 30vh; */
+    /* height: 50px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    list-style: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: gray;
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    
+
 }
+

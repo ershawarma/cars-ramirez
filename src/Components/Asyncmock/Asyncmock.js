@@ -1,39 +1,39 @@
 const products = [
     {
         id: '1',
-        name: 'man shirt black',
-        prince: 5.00,
-        category: 'man',
-        img: 'http://sc04.alicdn.com/kf/H2e11e1bdb21345548e7215ef463235a7B.jpg',
+        name: 'Berserk vol 1',
+        price: '5.00',
+        category: 'Mangas',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/91D07epNE9L.jpg',
         stock: 30,
-        despcription: 'Black shirt for men'
+        despcription: 'Berserk is'
     },
     {
         id: '2',
-        name: 'woman sweater beige',
-        prince: 8.00,
-        category: 'man',
-        img: 'https://i.pinimg.com/564x/b4/06/6b/b4066bfead02b763975c5cdeff5d008a.jpg',
+        name: 'Fullmetal Alchemist series',
+        price: '8.00',
+        category: 'Animes',
+        img: 'https://m.media-amazon.com/images/I/81w16gSXgKL._SL1500_.jpg',
         stock: 15,
-        despcription: 'Beige sweater for women'
+        despcription: 'Fullmetal Alchemist is'
     },
     {
         id: '3',
-        name: 'kid cap rainbow',
-        prince: 6.00,
-        category: 'kid',
-        img: 'https://m.media-amazon.com/images/I/61bX11zRkbL._AC_UX425_.jpg',
+        name: 'Link figure',
+        price: '6.00',
+        category: 'Figures',
+        img: 'https://m.media-amazon.com/images/I/61K4QnNo65L._AC_SL1321_.jpg',
         stock: 10,
-        despcription: 'Rainbow cap for kids'
+        despcription: 'Link is'
     },
     {
         id: '4',
-        name: 'pet shirt white',
-        prince: 13.00,
-        category: 'pet',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzNUc3V-9MgzEo36TN5BM1WrOh7PXi69evw&usqp=CAU',
+        name: 'One punch man vol 4',
+        price: '13.00',
+        category: 'Mangas',
+        img: 'https://m.media-amazon.com/images/I/51g350kiXML.jpg',
         stock: 20,
-        despcription: 'White shirt for pets'
+        despcription: 'One punch man is'
     }
 ]
 
@@ -41,6 +41,22 @@ export const getProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products)
-        }, 2000)
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 500)
+    })
+}
+
+export const getProductsById = (id) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 500)
     })
 }

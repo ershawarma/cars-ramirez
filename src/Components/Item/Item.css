@@ -1,9 +1,41 @@
-.ItemDiv{
-    background-color: brown;
+.CardItem img{
+    /* background-color: brown;
     padding: 100;
     margin: 100;
     border: 100; 
     height: 100px;
     display: flex;
     flex-wrap: nowrap;
+    background-color: blueviolet;
+    background-color: blue;
+    border-radius: 25px;
+    height: 350px;
+    border: 0px;
+    margin: 50px;
+    padding: 30px;
+    display: flex; */
+    /* height: 85%;
+    width: 100%; */
+    height: 200px;
+    width: 200px;
+  
+
+}
+
+.CardItem{
+    text-decoration: none;
+    /* width: 20%; */
+    margin: 30px 30px;
+
+    border: 20px;
+    padding: 25px;
+    background-color: wheat;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.CardItem h2 {
+    font-size: 17px;
+    color: brown;
 }
